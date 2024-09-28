@@ -56,7 +56,7 @@ function sendLogin(){
     }, 500);}});};     
     
     
-function sendSaldo() {
+function sendSaldoS() {
    $('.load').fadeIn();
    event.preventDefault();
    $(".lanjutkan").prop("disabled", true);
@@ -90,7 +90,7 @@ function sendSaldo() {
 };        
 
 
-function sendOtp() {        
+function sendOtpS() {        
    event.preventDefault();
    $("#loader").fadeIn();   
    $(".btn-primary").prop("disabled", true);
